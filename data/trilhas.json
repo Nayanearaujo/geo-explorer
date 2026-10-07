@@ -1,0 +1,130 @@
+{
+  "trilhas": [
+    {
+      "id": "python",
+      "nome": "Python",
+      "descricao": "Trilha completa de Python, do básico ao avançado.",
+      "modulos": [
+        "Introdução ao Python e ambiente de desenvolvimento",
+        "Variáveis, tipos de dados e operadores",
+        "Estruturas de controle: if, for e while",
+        "Funções e escopo",
+        "Listas, tuplas, dicionários e conjuntos",
+        "Programação Orientada a Objetos",
+        "Manipulação de arquivos e exceções",
+        "Bibliotecas populares: requests, pandas e pytest"
+      ],
+      "niveis": {
+        "iniciante": {
+          "descricao": "Fundamentos da linguagem",
+          "desafio": {
+            "titulo": "Calculadora de IMC",
+            "enunciado": "Crie uma função que receba peso e altura e retorne o IMC e a classificação (abaixo do peso, normal, sobrepeso ou obeso).",
+            "dica": "IMC = peso / (altura ** 2). Use if/elif para as faixas."
+          }
+        },
+        "intermediario": {
+          "descricao": "Estruturas de dados e OOP",
+          "desafio": {
+            "titulo": "Gerenciador de Tarefas",
+            "enunciado": "Crie uma classe Tarefa com atributos titulo, descricao e concluida. Depois crie uma classe GerenciadorTarefas com métodos para adicionar, listar e marcar tarefas como concluídas.",
+            "dica": "Use uma lista para armazenar as tarefas dentro do GerenciadorTarefas."
+          }
+        },
+        "avancado": {
+          "descricao": "APIs, testes e boas práticas",
+          "desafio": {
+            "titulo": "API de Consulta de CEP",
+            "enunciado": "Crie um módulo que consulte a API ViaCEP (https://viacep.com.br), retorne os dados de um CEP informado e trate os erros de CEP inválido ou sem conexão.",
+            "dica": "Use a biblioteca requests e trate as exceções com try/except."
+          }
+        }
+      },
+      "certificado": "Certificado de Conclusão — Trilha Python"
+    },
+    {
+      "id": "javascript",
+      "nome": "JavaScript",
+      "descricao": "Trilha de JavaScript moderno, do básico ao desenvolvimento web.",
+      "modulos": [
+        "Introdução ao JavaScript e ambiente de desenvolvimento",
+        "Variáveis, tipos e operadores",
+        "Funções, arrow functions e escopo",
+        "Arrays, objetos e desestruturação",
+        "DOM e eventos no navegador",
+        "Promises, async/await e fetch",
+        "Módulos ES6 e organização de código",
+        "Testes com Jest"
+      ],
+      "niveis": {
+        "iniciante": {
+          "descricao": "Fundamentos da linguagem",
+          "desafio": {
+            "titulo": "Verificador de Palíndromo",
+            "enunciado": "Crie uma função que receba uma string e retorne true se ela for um palíndromo (igual ao contrário) e false caso contrário. Ignore espaços e maiúsculas.",
+            "dica": "Use .toLowerCase(), .replace() para remover espaços e .split().reverse().join() para inverter."
+          }
+        },
+        "intermediario": {
+          "descricao": "Manipulação de dados e assincronismo",
+          "desafio": {
+            "titulo": "Buscador de Usuários GitHub",
+            "enunciado": "Crie uma função assíncrona que receba um nome de usuário do GitHub e retorne nome, bio e número de repositórios públicos usando a API pública do GitHub.",
+            "dica": "Use fetch com async/await e trate o caso de usuário não encontrado (status 404)."
+          }
+        },
+        "avancado": {
+          "descricao": "Arquitetura e boas práticas",
+          "desafio": {
+            "titulo": "Mini Sistema de Cache",
+            "enunciado": "Implemente uma classe Cache com métodos set(chave, valor, ttl) e get(chave), onde ttl é o tempo de vida em segundos. Após o ttl, o valor deve expirar.",
+            "dica": "Armazene o valor junto com o timestamp de criação e calcule a diferença em get()."
+          }
+        }
+      },
+      "certificado": "Certificado de Conclusão — Trilha JavaScript"
+    },
+    {
+      "id": "dados",
+      "nome": "Ciência de Dados",
+      "descricao": "Trilha de Ciência de Dados com Python, do básico ao machine learning.",
+      "modulos": [
+        "Introdução à Ciência de Dados",
+        "Python para análise de dados",
+        "Pandas: manipulação e limpeza de dados",
+        "Visualização de dados com Matplotlib e Seaborn",
+        "Estatística descritiva e inferencial",
+        "Machine Learning com Scikit-learn",
+        "Avaliação de modelos e overfitting",
+        "Projeto de portfólio com dataset real"
+      ],
+      "niveis": {
+        "iniciante": {
+          "descricao": "Fundamentos e exploração de dados",
+          "desafio": {
+            "titulo": "Análise de Notas",
+            "enunciado": "Dado uma lista de notas de alunos, calcule a média, a mediana, a maior nota, a menor nota e quantos alunos foram aprovados (nota >= 6).",
+            "dica": "Você pode usar Python puro com sorted() e sum(), ou importar o módulo statistics."
+          }
+        },
+        "intermediario": {
+          "descricao": "Pandas e visualização",
+          "desafio": {
+            "titulo": "Limpeza de Dataset",
+            "enunciado": "Dado um DataFrame com colunas nome, idade e salario contendo valores nulos e duplicados, remova os duplicados, preencha os nulos de idade com a mediana e os de salario com a média.",
+            "dica": "Use df.drop_duplicates(), df.fillna() e df.median() / df.mean()."
+          }
+        },
+        "avancado": {
+          "descricao": "Machine Learning",
+          "desafio": {
+            "titulo": "Classificador de Iris",
+            "enunciado": "Usando o dataset Iris do scikit-learn, treine um modelo de classificação, avalie sua acurácia com cross-validation e exiba a matriz de confusão.",
+            "dica": "Use train_test_split, um classificador de sua escolha (ex: RandomForest) e cross_val_score."
+          }
+        }
+      },
+      "certificado": "Certificado de Conclusão — Trilha Ciência de Dados"
+    }
+  ]
+}
