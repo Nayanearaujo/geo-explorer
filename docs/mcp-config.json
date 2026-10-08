@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "geo-explorer": {
+      "command": "python",
+      "args": ["/Users/nayane/geo-explorer/server.py"]
+    }
+  }
+}

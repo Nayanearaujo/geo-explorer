@@ -5,9 +5,9 @@ from datetime import date
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__)))
 
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver import MCPServer
 
-mcp = FastMCP("geo-explorer")
+mcp = MCPServer("geo-explorer")
 
 
 def carregar_trilhas():
